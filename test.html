@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7x3 表格</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>自我介紹表格</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="3">About--111305011</td>
+            </tr>
+            <tr>
+                <th rowspan = "3">
+                	<img src = "C:/pics/Patrick.jpg" alt = "My Personal Picture"><br>Personal photo
+                </th>
+                <td  colspan="2" align="left">
+                	<label> Name:<input name = "name" type = "text" size = "25" maxlength = "30"></label><br>
+                	<form><input type="radio" name="gender "value="Male">Male<br>
+                		<input type="radio" name="gender" value="female">Female<br>
+                		<input type="radio" name="gender" value="other">Other
+                	</form>
+            	</td>
+       		 </tr>
+            <tr>
+                <td>
+                	<form action="action_page.php">
+                		Country:<select name="Country">
+                			<option value="Taipei">Taipei</option>
+                			<option value="Tainan">Tainan</option>
+                			<option value="Taichung">Taichung</option>
+                			<option value="Taoyuan">Taoyuan</option>
+                		</select>
+                </td>
+                <td>
+                	<form action="/action_page.php">
+                		<label for="birthday">Birthday:</label>
+                		<input type="date" id="birthday" name="birthday"
+                		value = "年/月/日" min="2000-1-1" max="2005-12-31"
+                	</form>                	
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Email:
+                	<form>
+                		<input type="email" name="email" placeholder="name@domain.com" requird>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td colspan="2">
+                	<form><input type="radio" value="Swimming">Swimming
+                		<input type="radio" value="Volleyball">Volleyball
+                		<input type="radio" value="Movie">Movie
+                        <input type="radio" value="Game">Game
+                        <input type="radio" value="Sleep">Sleep
+                	</form>
+                </td>
+            </tr>
+            <tr>
+                <td>Skill</td>
+                <td colspan="2">
+                        <form><input type="radio" value="Java">Java
+                        <input type="radio" value="HTML">HTML
+                        <input type="radio" value="Python">Python
+                        <input type="radio" value="Microsoft Office">Microsoft Office
+                        <input type="radio" value="Premiere">Premiere
+                    </form>
+                </td>
+            </tr>
+			<tr>
+                <td>Say Something</td>
+                <td colspan="2">
+                    <textarea rows ="5" col="300">
+                    </textarea>
+                </td>
+            </tr>
+             <tr>
+                <td colspan="3">
+                    <input type="submit" value="繳交">
+                    <input type="reset" value="重設">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
